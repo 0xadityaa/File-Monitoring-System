@@ -12,7 +12,7 @@ if __name__ == "__main__":
     logging.basicConfig(filename="watcher.log",
         filemode='a',
         level=logging.INFO,
-        format="%(asctime)s - %(process)d - %(message)s",
+        format="%(asctime)s - %(process)d - %(message)s" + f' {user}',
         datefmt="%Y-%m-%d %H:%M:%S",
     )
     
